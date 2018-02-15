@@ -85,6 +85,24 @@
 
         </footer>
         {{!-- Add Disqus code here --}}
+        <div class="comment-container">
+          <div id="disqus_thread"></div>
+          <script>
+          /**
+          var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          **/
+          (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://maihaoches-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
     </article>
 </main>
 
@@ -107,14 +125,4 @@
     </a>
     {{/prev_post}}
 </aside>
-  <div id="mhc_comment"></div> 
-  <link rel="stylesheet" href="https://img.maihaoche.com/maihaoche_blog/mhc-comment.3303d81e08e9cca33e62.css">
-  <script src="https://img.maihaoche.com/maihaoche_blog/mhc-comment.3303d81e08e9cca33e62.js" charset="utf-8"></script>
-  <style>
-    #mhc_comment {
-      margin: 0 auto;
-      width: 80%;
-      max-width: 710px;
-    }
-  </style>
 {{/post}}
